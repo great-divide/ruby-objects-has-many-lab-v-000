@@ -12,11 +12,11 @@ class Author
 
   end
 
-  def add_song_by_name(name)
-    song  = Song.new(name)
-    @songs << song
-    song.artist = self
-    @@songs << song
+  def add_post_by_name(name)
+    post  = Post.new(name)
+    @posts << post
+    post.artist = self
+
   end
 
   def posts
